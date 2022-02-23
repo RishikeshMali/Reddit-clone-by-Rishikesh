@@ -1,0 +1,281 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    object-fit: contain; /* for to make responsive */
+}
+
+.grid-1 {
+    display: flex;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    height: 30px;
+    align-items:center;
+}
+
+header {
+    background-color: #f0f0f0;
+    border-width: thin;
+    border-bottom: solid rgb(184, 182, 182);
+}
+
+header ul {
+    margin: 0px;
+    display: inline; /* for horizontal navbar*/
+}
+    
+header li {
+    list-style-type: none; /* to remove dots */
+    cursor: pointer;
+}
+
+header li:hover {
+    text-decoration: underline;
+    /* background-color: rgb(177, 211, 255); */
+    color: cornflowerblue;
+}
+
+.hyphen:hover {
+    text-decoration: none;
+    color: black;
+    cursor:default;
+}
+
+#reddit-logo {
+    height: 80px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.sub {
+    display: flex;
+    background-color: rgb(211, 226, 253);
+    border-bottom:2px solid rgb(184, 182, 182);
+}
+
+
+
+div ul {
+    margin: 0px;
+    display: inline; /* for horizontal navbar*/
+    /* display: block; */ /* for vertical */ 
+}
+
+.grid-2 {
+    display: flex;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    margin-bottom: 0px;
+}
+
+.sub .grid-2 li {
+    list-style-type: none; /* to remove dots */
+    margin-right: 20px;
+    align-self: flex-end;
+    /* margin-bottom: 5px; */
+    font-weight: bold;
+    background-color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+}
+
+
+.sub .grid-3 li {
+    list-style-type: none; /* to remove dots */
+    align-content: flex-end;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.grid-3 {
+    display: flex;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    width: 40%;
+    justify-content: flex-end; /*for horizontly right side*/
+    align-self: flex-end;  /* for vertically bottom */
+    height: 20px;
+    margin-left: 15%;
+    padding-right: 10px;
+    background-color: white;
+    color: rgb(51, 99, 189);
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    display: flex;
+    margin-top: 100px;
+    /* background-color: aqua; */
+    justify-content: space-between;
+    width: 800px;
+    align-self: flex-start;
+}
+
+.container .post-number {
+    margin-left: 5%;
+    margin-right: 2%;
+    padding-left: 20px;
+    align-self: center; /* for vertically center */
+    font-size: 30px;
+}
+
+.vote {
+    /* align-items:: */
+    line-height: 30px;
+}
+
+#votes {
+    font-size: 20px;
+}
+
+.container .vote {
+    margin-right: 2%;
+    /* align-self: flex-start; for vertically center */
+}
+.vote i {
+    width: 100%;
+    margin-left: 45%;
+    /* background-color: bisque; */
+}
+
+.post {
+    font-size: 20px;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+    line-height: 30px;
+    /* align-self: flex-start; */
+}
+
+/* .grid-4 {
+    color: rgb(98, 100, 100);
+    font-size: 17px;
+    display: flex;
+}
+.grid-4 li {
+    list-style-type: none; to remove dots
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.grid-4 li:hover {
+    text-shadow: 2px 2px 5px cornflowerblue;
+} */
+
+/* .right {
+    display: flex;
+    justify-content: flex-end;
+} */
+
+.activity {
+    /* display: flex; */
+    /* margin-left: 25%; */
+    margin-right: 50px;
+    margin-top: 2em;
+    /* width: 400px; */
+    /* background-color: bisque; */
+    /* justify-content: flex-end; */
+    /* align-content: center; */
+    /* float: right; */
+    font-size: 20px;
+}
+
+.search-bar {
+    text-align: center;
+    height: 30px;
+    margin-bottom: 1em;
+}
+
+.search-bar input,i {
+    height: 25px;
+}
+
+.search-bar span i {
+    cursor: pointer;
+}
+
+.post-title {
+    text-decoration: none;
+}
+
+.submit-link {
+    text-decoration: none;
+    color: orangered;
+}
+
+.post-options span:hover {
+    text-shadow: 2px 2px 5px rgb(146, 144, 144);
+    
+}
+
+.post-options span {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.user-action-button {
+    background-color: rgb(162, 192, 247);
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    /* opacity: 0.6; */
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    width: 400px;
+  }
+  
+  .user-action-button:hover {
+      /* opacity: 1; */
+      background-color: rgb(131, 173, 250);
+    }
+
+    .reddit-gold {
+        margin-top: 1em;
+        padding-bottom: 20px;
+        border: 2px solid rgb(223, 222, 222);
+        text-align: center;
+    }
+
+    .bar-container {
+        margin-right: 40px;
+        margin-bottom: 1em;
+    }
+
+    .bar {
+        background-color: rgb(255, 187, 60);
+        border-radius: 10px;
+
+        width: 100%;
+        height: 10px;
+        margin-left: 1em;
+        margin-right: 1em;
+
+    }
+
+    .reddit-gold-support{
+        background-color: white;
+        font-size: 18px;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        color: rgb(100, 100, 80);
+        padding: 5px;
+        padding-right: 10px;
+        padding-left: 10px;
+        box-shadow: 0px 0px 5px 0px #888888;
+        cursor: pointer;
+    }
+
+    .reddit-gold-support:hover {
+        box-shadow: 0px 2px 5px 3px #bebdbd;
+    }

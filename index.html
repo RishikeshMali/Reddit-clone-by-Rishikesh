@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reddit</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+    <link rel="icon" type="image/x-icon" href="./assets/logo.png" /> <!-- Favicon-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <ul class="grid-1">
+            <li><b>MY SUBREDDITS</b></li>
+            <li class="hyphen">&nbsp; - &nbsp;</li>
+            <li>HOME</li>
+            <li class="hyphen">&nbsp; - &nbsp;</li>
+            <li>ALL</li>
+            <li class="hyphen">&nbsp; - &nbsp;</li>
+            <li>RANDOM</li>
+            <li class="hyphen">&nbsp; - &nbsp;</li>
+            <li>USERS</li>
+            <li class="hyphen">&nbsp; -</li>
+        </ul>
+    </header>
+
+    <div class="sub">
+        <img id="reddit-logo" src="./assets/reddit-logo.png" alt="REDDIT">
+
+        <ul class="grid-2">
+            <li>hot</li>
+            <li>new</li>
+            <li>rising</li>
+            <li>controversial</li>
+            <li>top</li>
+            <li>gilded</li>
+            <li>wiki</li>
+        </ul>
+
+        <ul class="grid-3">
+            <li>im_Rishikesh</li>
+            <li>(1327)</li>
+            <li><b>preferences</b></li>
+            <li>logout</li>
+        </ul>
+    </div>
+
+    <div class="main">
+        <div class="container">
+
+            <span class="post-number">1</span>
+
+            <div class="vote">
+                <i class="fas fa-angle-up arrow-up" onclick="upvote()"></i><br>
+                <span id="votes">15234</span> <br>
+                <i class="fas fa-angle-down arrow-down" onclick="downvote()"></i>
+            </div>
+            <div class="post">
+                <a href="#" class="post-title">Make a Reddit clone</a> self.myprojects <br>
+                submitted 3 hours ago by <a href="#" class="submit-link">im_Rishikesh</a> to <a href="#"
+                    class="submit-link">/r/redditclones</a><br>
+                <!-- <ul class="grid-4">
+                    <li>150</li>
+                    <li> comments</li>
+                    <li>share</b></li>
+                    <li>save</li>
+                    <li>hide</li>
+                    <li>report</li>
+                    <li>crosspost</li>
+                </ul> -->
+                <div class="post-options">
+                    <span>150</span>
+                    <span>comments</span>
+                    <span>shares</span>
+                    <span>save</span>
+                    <span>hide</span>
+                    <span>report</span>
+                    <span>crosspost</span>
+                </div>
+
+            </div>
+        </div>
+
+        
+        <div class="activity">
+            <div class="search-bar">
+                <input type="text" placeholder="Search.." name="search" style="width: 65%;">
+                <span><i class="fa fa-search"></i></span> <br>
+            </div>
+
+            <button class="user-action-button" href="#"> Submit a new link </button> <br>
+            <button class="user-action-button" href="#"> Submit a new text post </button> <br>
+            <button class="user-action-button" href="#"> Create your own subreddit </button><br>
+
+            <div class="reddit-gold">
+
+                <p>Daily reddit gold goal </p>
+
+                <div class="bar-container">
+                    <div class="bar">&nbsp;</div>
+                </div>
+
+                <b>75%</b><br>
+
+                <button class="reddit-gold-support"> help support reddit</button>
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>
